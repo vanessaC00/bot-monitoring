@@ -1,0 +1,1 @@
+/* Used for the functionality of the navigation to the bots */
