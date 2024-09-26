@@ -1,15 +1,9 @@
 {
-    "event_name": "API_Payload",
-    "data":
-    {
-        "version": "{{}}",
-        "release_date": "{{}}",
-        "bot_journey": "{{}}",
-        "bot_id": "{{}}",
-        "timestamp": "{{}}",
-        "conversation_id": "{{}}",
-        "status": "{{}}"
-    }
+    "version": "{{}}",
+    "release_date": "{{}}",
+    "bot_journey": "{{}}",
+    "bot_id": "{{event.botId}}",
+    "timestamp": "{{}}",
+    "conversation_id": "{{event.conversationId}}",
+    "status": "{{}}"
 }
-
-
