@@ -5,3 +5,22 @@
     /* padding: 2px; */
     z-index: 25;
 }
+
+.btnn{
+    padding-left: 14rem; 
+    padding-right: 13rem;
+}
+
+.cardColor{
+    border-color:black; 
+    background-color:whitesmoke;
+}
+
+.img-size{
+    max-width:4%; 
+    max-height:6%;
+}
+
+.borderColor{
+    border-color:black; 
+}
