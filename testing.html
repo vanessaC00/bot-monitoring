@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data to Botpress Webhook</title>
+</head>
+<body>
+
+    <h1>Send a Message to Botpress</h1>
+    
+    <!-- Form to send data -->
+    <form id="messageForm">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the form from submitting the traditional way
+            
+            const message = document.getElementById('message').value;
+
+            // Call the webhook using fetch
+            fetch('https://webhook.botpress.cloud/13c45b40-830d-48a3-a3d9-875c6bc3c15f', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ "version": "0.2",
+                              "release_date": "31/02/2024" ,
+                              "bot_journey": "elli_bot",
+                              "bot_id": "bp_vd8922fd...",
+                              "timestamp": "58534274242",
+                              "conversation_id": "dnasjdjasbascsac...",
+                              "status": "error", }), 
+            })
+            .then(() => {
+                console.log('Request sent successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        });
+    </script>
+
+</body>
+</html>
