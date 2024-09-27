@@ -1,9 +1,1 @@
-{
-    "version": "{{}}",
-    "release_date": "{{}}",
-    "bot_journey": "{{}}",
-    "bot_id": "{{event.botId}}",
-    "timestamp": "{{}}",
-    "conversation_id": "{{event.conversationId}}",
-    "status": "{{}}"
-}
+{"event_name": "pistachiobot_payload","data":{"version": "{{bot.w5BotVersion}}","release_date": "{{bot.w5BotJourney}}","bot_journey": "{{bot.w5BotReleaseDate}}","bot_id": "{{event.botId}}","timestamp": "{{bot.w5BotTimestamp}}","conversation_id": "{{event.conversationId}}","status": "{{bot.w5BotStatus}}"}}
