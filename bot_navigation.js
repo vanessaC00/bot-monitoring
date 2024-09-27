@@ -50,7 +50,7 @@
 //     }
 // });
 
-document.getElementById('messageForm').addEventListener('submit', function(event) {
+document.getElementById('messageFormTesting').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent the form from submitting the traditional way
 
   // Call the webhook using fetch
