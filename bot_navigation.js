@@ -50,29 +50,39 @@
 //     }
 // });
 
-document.getElementById('messageFormTesting').addEventListener('submit', function(event) {
-  event.preventDefault();  // Prevent the form from submitting the traditional way
+// document.getElementById('messageFormTesting').addEventListener('submit', function(event) {
+//   event.preventDefault();  // Prevent the form from submitting the traditional way
 
-  // Call the webhook using fetch
-  fetch('https://webhook.botpress.cloud/13c45b40-830d-48a3-a3d9-875c6bc3c15f', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-          'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ "version": "0.2",
-                    "release_date": "31/02/2024" ,
-                    "bot_journey": "elli_bot",
-                    "bot_id": "bp_vd8922fd...",
-                    "timestamp": "58534274242",
-                    "conversation_id": "dnasjdjasbascsac...",
-                    "status": "success", }), 
-  })
-  .then(() => {
-      console.log('Request sent successfully!');
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
+//   // Call the webhook using fetch
+//   fetch('https://webhook.botpress.cloud/13c45b40-830d-48a3-a3d9-875c6bc3c15f', {
+//       method: 'POST',
+//       mode: 'no-cors',
+//       headers: {
+//           'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({ "version": "0.2",
+//                     "release_date": "31/02/2024" ,
+//                     "bot_journey": "elli_bot",
+//                     "bot_id": "bp_vd8922fd...",
+//                     "timestamp": "58534274242",
+//                     "conversation_id": "dnasjdjasbascsac...",
+//                     "status": "success", }), 
+//   })
+//   .then(() => {
+//       console.log('Request sent successfully!');
+//   })
+//   .catch(error => {
+//       console.error('Error:', error);
+//   });
 
-});
+// });
+
+
+window.botpressWebChat.onEvent(
+    (event) => {
+      if(event.type === 'TRIGGER'){
+        console.log(event)
+        }
+    },
+    ['TRIGGER']
+  )
