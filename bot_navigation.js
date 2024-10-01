@@ -92,22 +92,19 @@ window.botpressWebChat.onEvent(
         console.log('Received event:', event);
         
         try {
-            const ellieData = event.value.data.ellie_bot;
-            const pistachioData = event.value.data.pistachio_bot;
-  
-            //console.log('Ellie Bot:', ellieData);
-            //console.log('Pistachio Bot:', pistachioData);
-
-            const ellieBotPayload = JSON.parse(JSON.stringify(ellieData));
-            const pistachioBotPayload = JSON.parse(JSON.stringify(pistachioData));
-
-            console.log('Processed Ellie Bot Payload:', ellieBotPayload);
-            console.log('Processed Pistachio Bot Payload:', pistachioBotPayload);
+            const ellieData = event.value.elli;
+            const pistachioData = event.value.pistachio;
+            const studyGuideData = event.value.study_guide;
+            const destinationGuideData = event.value.destination_guide;
+            
+            console.log('Ellie Bot:', ellieData);
+            console.log('Pistachio Bot:', pistachioData);
+            console.log('Study Guide:', studyGuideData);
+            console.log('Destination Guide:', destinationGuideData);
   
         } catch (error) {
           console.error('Error parsing event data:', error);
         }
       }
-    },
-    ['TRIGGER']
+    },['TRIGGER']
   );
