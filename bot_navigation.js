@@ -78,11 +78,36 @@
 // });
 
 
+// window.botpressWebChat.onEvent(
+//     (event) => {
+//       if(event.type === 'TRIGGER'){
+//         console.log(event)
+//         }
+//     },
+//     ['TRIGGER']
+//   )
 window.botpressWebChat.onEvent(
     (event) => {
-      if(event.type === 'TRIGGER'){
-        console.log(event)
+      if (event.type === 'TRIGGER') {
+        console.log('Received event:', event);
+        
+        try {
+            const ellieData = event.value.data.ellie_bot;
+            const pistachioData = event.value.data.pistachio_bot;
+  
+            //console.log('Ellie Bot:', ellieData);
+            //console.log('Pistachio Bot:', pistachioData);
+
+            const ellieBotPayload = JSON.parse(JSON.stringify(ellieData));
+            const pistachioBotPayload = JSON.parse(JSON.stringify(pistachioData));
+
+            console.log('Processed Ellie Bot Payload:', ellieBotPayload);
+            console.log('Processed Pistachio Bot Payload:', pistachioBotPayload);
+  
+        } catch (error) {
+          console.error('Error parsing event data:', error);
         }
+      }
     },
     ['TRIGGER']
-  )
+  );
