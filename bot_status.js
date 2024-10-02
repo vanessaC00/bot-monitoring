@@ -51,10 +51,10 @@ async function processEventData() {
     console.log('Study Guide (after event):', studyGuideData);
     console.log('Destination Guide (after event):', destinationGuideData);
 
-    document.getElementById('ellie-data').textContent = ellieData.bot_journey ? `Journey: ${ellieData.bot_journey}, Status: ${ellieData.status}` : 'No data available';
-    document.getElementById('pistachio-data').textContent = pistachioData.bot_journey ? `Journey: ${pistachioData.bot_journey}, Status: ${pistachioData.status}` : 'No data available';
-    document.getElementById('study-guide-data').textContent = studyGuideData.bot_journey ? `Journey: ${studyGuideData.bot_journey}, Status: ${studyGuideData.status}` : 'No data available';
-    document.getElementById('destination-guide-data').textContent = destinationGuideData.bot_journey ? `Journey: ${destinationGuideData.bot_journey}, Status: ${destinationGuideData.status}` : 'No data available';
+    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Version:<br> ${ellieData.version}<br>Latest update:<br> ${ellieData.updatedAt}` : 'No data available';
+    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Version:<br> ${pistachioData.version}<br>Status:<br> ${pistachioData.status}` : 'No data available';
+    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Version:<br> ${studyGuideData.version}<br>Status:<br> ${studyGuideData.status}` : 'No data available';
+    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Version:<br> ${destinationGuideData.version}<br>Status:<br> ${destinationGuideData.status}` : 'No data available';
 
     updateStatusCircle('ellie-status-circle', ellieData.status);
     updateStatusCircle('pistachio-status-circle', pistachioData.status);
