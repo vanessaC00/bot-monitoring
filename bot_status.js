@@ -60,6 +60,11 @@ async function processEventData() {
     updateStatusCircle('pistachio-status-circle', pistachioData.status);
     updateStatusCircle('study-guide-status-circle', studyGuideData.status);
     updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
+
+    attachClickEventToStatus('ellie-status-circle', ellieData.status);
+    attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
+    attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
+    attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
 }
 
 function updateStatusCircle(elementId, status) {
@@ -73,6 +78,39 @@ function updateStatusCircle(elementId, status) {
         element.classList.add('bg-danger');
     } else if (status === 'error') {
         element.classList.add('bg-dark'); 
+    }
+}
+
+function attachClickEventToStatus(elementId, status) {
+    const statusCircle = document.getElementById(elementId);
+    
+    statusCircle.addEventListener('click', function() {
+        openModal(status);
+    });
+}
+
+function openModal(status) {
+    const modal = document.getElementById('statusModal');
+    const statusMessage = document.getElementById('statusMessage');
+
+    if (status === 'online') {
+        statusMessage.textContent = 'The bot is currently online.';
+    } else if (status === 'offline') {
+        statusMessage.textContent = 'The bot is currently offline.';
+    } else if (status === 'error') {
+        statusMessage.textContent = 'There is an error with the bot.';
+    }
+
+    modal.style.display = 'flex';
+
+    document.querySelector('.close').onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
     }
 }
 

@@ -19,49 +19,54 @@
 
     <div class="card cardColor">
         <div class="container my-3 ms-1">
-        <div class="row justify-content-start">
-            <!-- Home Button -->
-            <div class="col-auto">
-                <button class="btn btn-dark align-content-center btnn" type="button">
-                    <div class="container text-center mx-2">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="fa-solid fa-house"></i>
-                            </div>
-                            <div class="col-9">
-                                Home
-                            </div>
-                        </div>
-                    </div>
-                </button>
-            </div>
-    
-            <!-- Choose Bots Dropdown -->
-            <div class="col-auto">
-                <div class="dropdown">
-                    <button class="btn btn-dark align-content-center btnn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="row justify-content-start">
+                <!-- Home Button -->
+                <div class="col-auto">
+                    <button class="btn btn-dark align-content-center btnn"  type="button" onclick="navigateTo('/index.html')">
                         <div class="container text-center mx-2">
                             <div class="row">
                                 <div class="col-2">
-                                    <i class="fa-solid fa-list"></i>
+                                    <i class="fa-solid fa-house"></i>
                                 </div>
                                 <div class="col-9">
-                                    Choose Bots
+                                    Home
                                 </div>
                             </div>
                         </div>
                     </button>
-                    <ul class="dropdown-menu">
-                        <form id="messageForm">
-                            <li><button class="dropdown-item btnn" href="#" type="submit">Pistachio Bot</button></li>
-                            <li><button class="dropdown-item btnn" href="#">Elli Bot</button></li>
-                            <li><button class="dropdown-item btnn" href="#">Something else here</button></li>
-                        </form>
-                    </ul>
                 </div>
-            </div>
+        
+                <!-- Choose Bots Dropdown -->
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-dark align-content-center btnn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="container text-center mx-2">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-list"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        Choose Bots
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis-page.html')">Pistachio Bot</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis-page.html')">Elli Bot</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis-page.html')">Study Guide Bot</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis-page.html')">Destination Guide Bot</button></li>
+                        </ul>
+                    </div>
+                </div>
         </div>
     </div>
+    <div id="statusModal" class="modal" style="display:none;">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="statusMessage"></p>
+        </div>
+      </div>
     </div>
     <div class="card">
         <div class="row" style="--bs-gutter-x: 0;">
@@ -265,6 +270,8 @@
             
         </div>
     </div>
+
+   
 
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script>
