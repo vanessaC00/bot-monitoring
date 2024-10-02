@@ -4,7 +4,9 @@ body {
     height: 100%;
     left: 0;
     top: 0;
+    position: fixed;
 }
+
 .redB {
     margin: 5px;
     margin-left: auto;
@@ -65,3 +67,8 @@ body {
     color: inherit;          /* Inherit the color from the parent element */
     cursor: default;         /* Remove the pointer cursor, use default instead */
   }
+
+.scroll {
+    max-height: 280px;
+    overflow-y: auto;
+}
