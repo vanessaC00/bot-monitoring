@@ -5,6 +5,7 @@ html, body {
     flex-direction: column;
 }
 
+
 .card {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,15 @@ html, body {
 
 .container {
     flex-grow: 1;
+}
+
+.status-container {
+    max-height: 580px;
+    overflow-y: auto;  
+}
+
+.btnn {
+    margin-right: 5px; 
 }
 
 .col-8 {
@@ -39,8 +49,8 @@ html, body {
 }
 
 .img-size{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 85px;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
@@ -82,7 +92,6 @@ html, body {
   }
 
 .scroll {
-    height: 580px;
-    flex-grow: 1;
+    max-height: 600px; 
     overflow-y: auto;
 }

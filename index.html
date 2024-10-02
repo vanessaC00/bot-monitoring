@@ -16,34 +16,52 @@
             <button class="settingsButton"><i class='fas fa-cog' style='font-size:36px'></i></i></button>
         </div>
     </div>
+
     <div class="card cardColor">
-        <div class="row" style="--bs-gutter-x: 0;">
-            <div class="col-4">
-                <div class="container my-3 ms-1">
-                    <div class="dropdown">
-                        <button class="btn btn-dark align-content-center btnn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="container text-center mx-2">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <i class="fa-solid fa-list"></i>
-                                    </div>
-                                    <div class="col-9">
-                                        Choose Bots
-                                    </div>
+        <div class="container my-3 ms-1">
+        <div class="row justify-content-start">
+            <!-- Home Button -->
+            <div class="col-auto">
+                <button class="btn btn-dark align-content-center btnn" type="button">
+                    <div class="container text-center mx-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="col-9">
+                                Home
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+    
+            <!-- Choose Bots Dropdown -->
+            <div class="col-auto">
+                <div class="dropdown">
+                    <button class="btn btn-dark align-content-center btnn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="container text-center mx-2">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-list"></i>
+                                </div>
+                                <div class="col-9">
+                                    Choose Bots
                                 </div>
                             </div>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <form id="messageForm">
-                                <li><button class="dropdown-item btnn" href="#" type="submit">Pistachio Bot</a></li>
-                                <li><button class="dropdown-item btnn" href="#">Elli Bot</a></li>
-                                <li><button class="dropdown-item btnn" href="#">Something else here</a></li>
-                            </form>
-                        </ul>
-                    </div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <form id="messageForm">
+                            <li><button class="dropdown-item btnn" href="#" type="submit">Pistachio Bot</button></li>
+                            <li><button class="dropdown-item btnn" href="#">Elli Bot</button></li>
+                            <li><button class="dropdown-item btnn" href="#">Something else here</button></li>
+                        </form>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="card">
         <div class="row" style="--bs-gutter-x: 0;">
@@ -57,7 +75,7 @@
             </div>
             <div class="col-8 d-flex" >
                 <div class="card my-2 me-2 borderColor" style="flex-direction:row !important;">
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush status-container scroll">
                         <li class="list-group-item">
                             <div class="row" >
                                 <div class="col-4">
@@ -233,6 +251,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                
                             </div>
                         
                     </ul>
