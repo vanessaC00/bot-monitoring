@@ -1,44 +1,79 @@
+window.onload = function () {
+    // Automatically send a message when the page loads.
+    sendBotTriggerMessage();
+};
+
+function sendBotTriggerMessage() {
+    window.botpressWebChat.sendEvent({
+        type: 'message',
+        text: 'Trigger data load',
+        channel: 'web'
+    });
+}
 
 
-// const options = {method: 'GET', headers: {accept: 'application/json'}};
+let ellieData = {};
+let pistachioData = {};
+let studyGuideData = {};
+let destinationGuideData = {};
 
-// fetch('https://api.botpress.cloud/v1/admin/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/versions/versionId', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
+function getEventData() {
+    return new Promise((resolve, reject) => {
+        window.botpressWebChat.onEvent(
+            (event) => {
+                if (event.type === 'TRIGGER') {
+                    console.log('Received event:', event);
+                    try {
+                        // ellieData = event.value.elli;
+                        // pistachioData = event.value.pistachio;
+                        // studyGuideData = event.value.study_guide;
+                        // destinationGuideData = event.value.destination_guide;
 
+                        ellieData = event.value.elli || {};
+                        pistachioData = event.value.pistachio || {};
+                        studyGuideData = event.value.study_guide || {};
+                        destinationGuideData = event.value.destination_guide || {};
+                        
+                        resolve();
+                    } catch (error) {
+                        reject('Error parsing event data');
+                    }
+                }
+            }, ['TRIGGER']
+        );
+    });
+}
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var userPayload = window.userPayload || {};
+async function processEventData() {
+    await getEventData(); 
+    console.log('Ellie Bot (after event):', ellieData);
+    console.log('Pistachio Bot (after event):', pistachioData);
+    console.log('Study Guide (after event):', studyGuideData);
+    console.log('Destination Guide (after event):', destinationGuideData);
 
-//     if (window.botpressWebChat) {
-//         window.botpressWebChat.init({
-//             "botId": "9e71a24c-6a0e-4471-ad00-8c4064552e08", 
-//             "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-//             "messagingUrl": "https://messaging.botpress.cloud",
-//             "clientId": "9e71a24c-6a0e-4471-ad00-8c4064552e08",
-//             "webhookId": "13c45b40-830d-48a3-a3d9-875c6bc3c15f",
-//             "frontendVersion": "v1",
-//             "useSessionStorage": true,
-//             "allowedOrigins": [],
-//             userData: userPayload,
-//         });
+    document.getElementById('ellie-data').textContent = ellieData.bot_journey ? `Journey: ${ellieData.bot_journey}, Status: ${ellieData.status}` : 'No data available';
+    document.getElementById('pistachio-data').textContent = pistachioData.bot_journey ? `Journey: ${pistachioData.bot_journey}, Status: ${pistachioData.status}` : 'No data available';
+    document.getElementById('study-guide-data').textContent = studyGuideData.bot_journey ? `Journey: ${studyGuideData.bot_journey}, Status: ${studyGuideData.status}` : 'No data available';
+    document.getElementById('destination-guide-data').textContent = destinationGuideData.bot_journey ? `Journey: ${destinationGuideData.bot_journey}, Status: ${destinationGuideData.status}` : 'No data available';
 
-//         // window.botpressWebChat.onEvent(
-//         //     function(event) {
-//         //         console.log('Received event:', event);
-//         //         if (event.event_name === 'pistachiobot_payload') {
-//         //             console.log('Custom event data:', event.data);
-//         //             console.log('Bot Version:', event.data.version);
-//         //             console.log('Release Date:', event.data.release_date);
-//         //             console.log('Bot Journey:', event.data.bot_journey);
-//         //         }
-//         //     },
-//         //     ['pistachiobot_payload']
-//         // );
+    updateStatusCircle('ellie-status-circle', ellieData.status);
+    updateStatusCircle('pistachio-status-circle', pistachioData.status);
+    updateStatusCircle('study-guide-status-circle', studyGuideData.status);
+    updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
+}
 
-//         console.log("User payload:", userPayload)
-//     } else {
-//         console.error('Botpress Web Chat script not loaded');
-//     }
-// });
+function updateStatusCircle(elementId, status) {
+    const element = document.getElementById(elementId).firstElementChild; 
+    
+    element.classList.remove('bg-success', 'bg-danger', 'bg-dark');
+
+    if (status === 'online') {
+        element.classList.add('bg-success');
+    } else if (status === 'offline') {
+        element.classList.add('bg-danger');
+    } else if (status === 'error') {
+        element.classList.add('bg-dark'); 
+    }
+}
+
+processEventData();

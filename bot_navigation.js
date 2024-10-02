@@ -69,28 +69,3 @@
 //       console.error('Error:', error);
 //   });
 // });
-
-
-window.botpressWebChat.onEvent(
-    (event) => {
-      if (event.type === 'TRIGGER') {
-        console.log('Received event:', event);
-        
-        try {
-            const ellieData = event.value.elli;
-            const pistachioData = event.value.pistachio;
-            const studyGuideData = event.value.study_guide;
-            const destinationGuideData = event.value.destination_guide;
-            
-            console.log('Ellie Bot:', ellieData);
-            console.log('Pistachio Bot:', pistachioData);
-            console.log('Study Guide:', studyGuideData);
-            console.log('Destination Guide:', destinationGuideData);
-  
-        } catch (error) {
-          console.error('Error parsing event data:', error);
-        }
-      }
-    },['TRIGGER']
-  );
-
