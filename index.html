@@ -10,12 +10,18 @@
     <!-- <script src="bot_navigation.js"></script> -->
 </head>
 <body>
-    <div class="card py-2 cardColor">
+    <header class="card py-2 cardColor">
         <div class=" my-1 mx-2">
-            <img src="qs-logo-header.png" class="img-size">
-            <button class="settingsButton"><i class='fas fa-cog' style='font-size:36px'></i></i></button>
+            <div class="row" style="--bs-gutter-x: 0;">
+                <div class="col-6">
+                    <img src="qs-logo-header.png" class="img-size">
+                </div>
+                <div class="col-6 align-content-center">
+                    <button class="settingsButton "><i class='fas fa-cog' style='font-size:36px'></i></i></button>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="card cardColor">
         <div class="container my-3 ms-1">
@@ -134,142 +140,138 @@
                                 </div>
                             </div>
                         </li>
-                        
-                            <div class="row scroll" style="--bs-gutter-x: 0;">
-                                <div class="col-12">
-                                    <div class="card mx-2 my-2 borderColor">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6 d-flex align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-3 align-content-center">
-                                                            <img src="Elli-bot-pic.png" class="img-bot">
-                                                        </div>
-                                                        <div class="col-9 align-content-center">
-                                                            <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/b73aeb28-640f-48a6-9b1f-46d84fc02e70/overview">ELLI BOT</a></h2>
-                                                        </div>
+                        <div class="row scroll" style="--bs-gutter-x: 0;">
+                            <div class="col-12">
+                                <div class="card mx-2 my-2 borderColor">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-3 align-content-center">
+                                                        <img src="Elli-bot-pic.png" class="img-bot">
+                                                    </div>
+                                                    <div class="col-9 align-content-center">
+                                                        <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/b73aeb28-640f-48a6-9b1f-46d84fc02e70/overview">ELLI BOT</a></h2>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-9 ">
-                                                            <p id="ellie-data">Loading...</p>
-                                                        </div>
-                                                        <div id="ellie-status-circle" class="status-circle col-3">
-                                                            <span class=" p-3 bg-success border border-light rounded-circle">
-                                                                <span class="visually-hidden">Status Indicator</span>
-                                                            </span>
-                                                        </div>
+                                            </div>
+                                            <div class="col-6 align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-9 ">
+                                                        <p id="ellie-data">Loading...</p>
+                                                    </div>
+                                                    <div id="ellie-status-circle" class="status-circle col-3">
+                                                        <span class=" p-3 bg-success border border-light rounded-circle">
+                                                            <span class="visually-hidden">Status Indicator</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="card mx-2 my-2 borderColor">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6 d-flex align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-3 align-content-center">
-                                                            <img src="Lead-gen-bot-pic.png" class="img-bot">
-                                                        </div>
-                                                        <div class="col-9 align-content-center">
-                                                            <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">PISTACHIO BOT</a></<h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-9 ">
-                                                            <p id="pistachio-data">Loading...</p>
-                                                        </div>
-                                                        <div id="pistachio-status-circle" class="status-circle col-3">
-                                                            <span class=" p-3 bg-success border border-light rounded-circle">
-                                                                <span class="visually-hidden">Status Indicator</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card mx-2 my-2 borderColor">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6 d-flex align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-3 align-content-center">
-                                                            <img src="Lead-gen-bot-pic.png" class="img-bot">
-                                                        </div>
-                                                        <div class="col-9 align-content-center">
-                                                            <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">STUDY GUIDE</a></<h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-9 ">
-                                                            <p id="study-guide-data">Loading...</p>
-                                                        </div>
-                                                        <div id="study-guide-status-circle" class="status-circle col-3">
-                                                            <span class=" p-3 bg-success border border-light rounded-circle">
-                                                                <span class="visually-hidden">Status Indicator</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card mx-2 my-2 borderColor">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6 d-flex align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-3 align-content-center">
-                                                            <img src="Lead-gen-bot-pic.png" class="img-bot">
-                                                        </div>
-                                                        <div class="col-9 align-content-center">
-                                                            <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">Destination GUIDE</a></<h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 align-items-stretch justify-content-center">
-                                                    <div class="row">
-                                                        <div class="col-9 ">
-                                                            <p id="destination-guide-data">Loading...</p>
-                                                        </div>
-                                                        <div id="destination-guide-status-circle" class="status-circle col-3">
-                                                            <span class=" p-3 bg-success border border-light rounded-circle">
-                                                                <span class="visually-hidden">Status Indicator</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
                             </div>
-                        
+                            <div class="col-12">
+                                <div class="card mx-2 my-2 borderColor">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-3 align-content-center">
+                                                        <img src="Lead-gen-bot-pic.png" class="img-bot">
+                                                    </div>
+                                                    <div class="col-9 align-content-center">
+                                                        <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">PISTACHIO BOT</a></<h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-9 ">
+                                                        <p id="pistachio-data">Loading...</p>
+                                                    </div>
+                                                    <div id="pistachio-status-circle" class="status-circle col-3">
+                                                        <span class=" p-3 bg-success border border-light rounded-circle">
+                                                            <span class="visually-hidden">Status Indicator</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mx-2 my-2 borderColor">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-3 align-content-center">
+                                                        <img src="Lead-gen-bot-pic.png" class="img-bot">
+                                                    </div>
+                                                    <div class="col-9 align-content-center">
+                                                        <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">STUDY GUIDE</a></<h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-9 ">
+                                                        <p id="study-guide-data">Loading...</p>
+                                                    </div>
+                                                    <div id="study-guide-status-circle" class="status-circle col-3">
+                                                        <span class=" p-3 bg-success border border-light rounded-circle">
+                                                            <span class="visually-hidden">Status Indicator</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mx-2 my-2 borderColor">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-3 align-content-center">
+                                                        <img src="Lead-gen-bot-pic.png" class="img-bot">
+                                                    </div>
+                                                    <div class="col-9 align-content-center">
+                                                        <h2><a class="no-link" href="https://app.botpress.cloud/workspaces/wkspace_01HMAJW0RD0NBS3N9MEDM111JF/bots/a4acca45-aa89-4340-996f-e12b79cb2ab9/overview">Destination GUIDE</a></<h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-items-stretch justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-9 ">
+                                                        <p id="destination-guide-data">Loading...</p>
+                                                    </div>
+                                                    <div id="destination-guide-status-circle" class="status-circle col-3">
+                                                        <span class=" p-3 bg-success border border-light rounded-circle">
+                                                            <span class="visually-hidden">Status Indicator</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card py-2 cardColor">
-        <div class="container my-4">
+    <footer class="card cardColor">
+        <div class="container">
             
         </div>
-    </div>
+    </footer>
 
    
 
