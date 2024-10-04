@@ -51,10 +51,10 @@ async function processEventData() {
     console.log('Study Guide (after event):', studyGuideData);
     console.log('Destination Guide (after event):', destinationGuideData);
 
-    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Version:<br> ${ellieData.version}<br>Latest update:<br> ${ellieData.updatedAt}` : 'No data available';
-    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Version:<br> ${pistachioData.version}<br>Status:<br> ${pistachioData.status}` : 'No data available';
-    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Version:<br> ${studyGuideData.version}<br>Status:<br> ${studyGuideData.status}` : 'No data available';
-    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Version:<br> ${destinationGuideData.version}<br>Status:<br> ${destinationGuideData.status}` : 'No data available';
+    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Live Version:<br> ${ellieData.version}<br>Latest release version:<br> ${ellieData.updatedAt}` : 'No data available';
+    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Live Version:<br> ${pistachioData.version}<br>Latest release version:<br> ${pistachioData.status}` : 'No data available';
+    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Live Version:<br> ${studyGuideData.version}<br>Latest release version:<br> ${studyGuideData.status}` : 'No data available';
+    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Live Version:<br> ${destinationGuideData.version}<br>Latest release version:<br> ${destinationGuideData.status}` : 'No data available';
 
     updateStatusCircle('ellie-status-circle', ellieData.status);
     updateStatusCircle('pistachio-status-circle', pistachioData.status);
@@ -65,6 +65,22 @@ async function processEventData() {
     attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
     attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
+    
+    if(ellieData.status === 'offline'){
+        alert('Ellie bot is offline!');
+        console.log("Ellie")
+    }else if(pistachioData.status === 'offline'){
+        alert('Pistachio bot is offline!');
+        console.log("Pistachio")
+    }else if(studyGuideData.status === 'offline'){
+        alert('Study Guide bot is offline!');
+        console.log("Study Guide")
+    }else if(destinationGuideData.status === 'offline'){
+        alert('Destination Guide is offline!');
+        console.log("Destination Guide")
+    }else{
+        console.log("nothing happen")
+    }
 }
 
 function updateStatusCircle(elementId, status) {
