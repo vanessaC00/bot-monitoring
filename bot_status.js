@@ -9,7 +9,7 @@ function sendBotTriggerMessage() {
         text: 'Trigger data load',
         channel: 'web'
     });
-}
+}// end sendBotTriggerMessage()
 
 
 let ellieData = {};
@@ -24,10 +24,6 @@ function getEventData() {
                 if (event.type === 'TRIGGER') {
                     console.log('Received event:', event);
                     try {
-                        // ellieData = event.value.elli;
-                        // pistachioData = event.value.pistachio;
-                        // studyGuideData = event.value.study_guide;
-                        // destinationGuideData = event.value.destination_guide;
 
                         ellieData = event.value.elli || {};
                         pistachioData = event.value.pistachio || {};
@@ -42,15 +38,42 @@ function getEventData() {
             }, ['TRIGGER']
         );
     });
-}
+}// end getEventData()
 
 async function processEventData() {
     await getEventData(); 
-    console.log('Ellie Bot (after event):', ellieData);
-    console.log('Pistachio Bot (after event):', pistachioData);
-    console.log('Study Guide (after event):', studyGuideData);
-    console.log('Destination Guide (after event):', destinationGuideData);
 
+    const page = window.location.pathname.split('/').pop();
+
+    switch (page) {
+        case 'analysis_ellibot.html':
+            console.log('Ellie Bot (after event):', ellieData);
+            updatePageForEllie();
+            break;
+        case 'analysis_pistachiobot.html':
+            console.log('Pistachio Bot (after event):', pistachioData);
+            updatePageForPistachio();
+            break;
+        case 'analysis_studyguidebot.html':
+            console.log('Study Guide (after event):', pistachioData);
+            updatePageForStudyGuide();
+            break;
+        case 'analysis_destinationguidebot.html':
+            console.log('Destination Guide (after event):', pistachioData);
+            updatePageForDestinationGuide();
+            break;
+        default:
+            console.log('Ellie Bot (after event):', ellieData);
+            console.log('Pistachio Bot (after event):', pistachioData);
+            console.log('Study Guide (after event):', studyGuideData);
+            console.log('Destination Guide (after event):', destinationGuideData);
+            updateAll();
+            break;
+    }
+}// end processEventData()
+
+
+function updateAll() {
     document.getElementById('ellie-data').innerHTML = ellieData.version ? `Version:<br> ${ellieData.version}<br>Latest update:<br> ${ellieData.updatedAt}` : 'No data available';
     document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Version:<br> ${pistachioData.version}<br>Status:<br> ${pistachioData.status}` : 'No data available';
     document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Version:<br> ${studyGuideData.version}<br>Status:<br> ${studyGuideData.status}` : 'No data available';
@@ -65,7 +88,35 @@ async function processEventData() {
     attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
     attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
-}
+}// end updateAll()
+
+
+function updatePageForEllie() {
+    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Version:<br> ${ellieData.version}<br>Latest update:<br> ${ellieData.updatedAt}` : 'No data available';
+    updateStatusCircle('ellie-status-circle', ellieData.status);
+    attachClickEventToStatus('ellie-status-circle', ellieData.status);
+}// end updatePageForEllie()
+
+function updatePageForPistachio() {
+    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Version:<br> ${pistachioData.version}<br>Status:<br> ${pistachioData.status}` : 'No data available';
+    updateStatusCircle('pistachio-status-circle', pistachioData.status);
+    attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
+}// end updatePageForPistachio()
+
+function updatePageForStudyGuide() {
+    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Version:<br> ${studyGuideData.version}<br>Status:<br> ${studyGuideData.status}` : 'No data available';
+    updateStatusCircle('study-guide-status-circle', studyGuideData.status);
+    attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
+}// end updatePageForStudyGuide()
+
+function updatePageForDestinationGuide() {
+    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Version:<br> ${destinationGuideData.version}<br>Status:<br> ${destinationGuideData.status}` : 'No data available';
+    updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
+    attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
+}// updatePageForDestinationGuide()
+
+
+
 
 function updateStatusCircle(elementId, status) {
     const element = document.getElementById(elementId).firstElementChild; 
@@ -79,7 +130,7 @@ function updateStatusCircle(elementId, status) {
     } else if (status === 'error') {
         element.classList.add('bg-dark'); 
     }
-}
+}// end updateStatusCircle()
 
 function attachClickEventToStatus(elementId, status) {
     const statusCircle = document.getElementById(elementId);
@@ -87,7 +138,7 @@ function attachClickEventToStatus(elementId, status) {
     statusCircle.addEventListener('click', function() {
         openModal(status);
     });
-}
+}// end attachClickEventToStatus()
 
 function openModal(status) {
     const modal = document.getElementById('statusModal');
@@ -99,6 +150,8 @@ function openModal(status) {
         statusMessage.textContent = 'The bot is currently offline.';
     } else if (status === 'error') {
         statusMessage.textContent = 'There is an error with the bot.';
+    } else {
+        statusMessage.textContent = 'It appears that there is no payload for this bot';
     }
 
     modal.style.display = 'flex';
@@ -112,6 +165,6 @@ function openModal(status) {
             modal.style.display = 'none';
         }
     }
-}
+}// end openModal()
 
 processEventData();

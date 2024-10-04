@@ -75,17 +75,28 @@
                 </ul>
             </div>
 
-          
+            <div id="statusModal" class="modal" style="display:none;">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="statusMessage"></p>
+                </div>
+              </div>
+            </div>
             <div class="col-9">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4>Analytics: Destination Guide Bot</h4>
                     <div class="d-flex align-items-center">
-                        <span class="me-3">Live Version: Example Bot ID</span>
-                        <span class="me-3">Latest Released Version: Example Bot ID</span>
-                        <div id="destination-guide-status-circle" class="status-circle col-3">
-                            <span class=" p-3 bg-success border border-light rounded-circle">
-                                <span class="visually-hidden">Status Indicator</span>
-                            </span>
+                        <div class="col-6 align-items-stretch justify-content-center">
+                            <div class="row">
+                                <div class="col-9 ">
+                                    <p id="destination-guide-data">Loading...</p>
+                                </div>
+                                <div id="destination-guide-status-circle" class="status-circle col-3">
+                                    <span class=" p-3 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">Status Indicator</span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
