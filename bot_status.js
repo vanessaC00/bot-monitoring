@@ -88,35 +88,23 @@ function updateAll() {
     attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
     attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
-}// end updateAll()
-
-
-function updatePageForEllie() {
-    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Version:<br> ${ellieData.version}<br>Latest update:<br> ${ellieData.updatedAt}` : 'No data available';
-    updateStatusCircle('ellie-status-circle', ellieData.status);
-    attachClickEventToStatus('ellie-status-circle', ellieData.status);
-}// end updatePageForEllie()
-
-function updatePageForPistachio() {
-    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Version:<br> ${pistachioData.version}<br>Status:<br> ${pistachioData.status}` : 'No data available';
-    updateStatusCircle('pistachio-status-circle', pistachioData.status);
-    attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
-}// end updatePageForPistachio()
-
-function updatePageForStudyGuide() {
-    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Version:<br> ${studyGuideData.version}<br>Status:<br> ${studyGuideData.status}` : 'No data available';
-    updateStatusCircle('study-guide-status-circle', studyGuideData.status);
-    attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
-}// end updatePageForStudyGuide()
-
-function updatePageForDestinationGuide() {
-    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Version:<br> ${destinationGuideData.version}<br>Status:<br> ${destinationGuideData.status}` : 'No data available';
-    updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
-    attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
-}// updatePageForDestinationGuide()
-
-
-
+    
+    if(ellieData.status === 'offline'){
+        alert('Ellie bot is offline!');
+        console.log("Ellie")
+    }else if(pistachioData.status === 'offline'){
+        alert('Pistachio bot is offline!');
+        console.log("Pistachio")
+    }else if(studyGuideData.status === 'offline'){
+        alert('Study Guide bot is offline!');
+        console.log("Study Guide")
+    }else if(destinationGuideData.status === 'offline'){
+        alert('Destination Guide is offline!');
+        console.log("Destination Guide")
+    }else{
+        console.log("nothing happen")
+    }
+}
 
 function updateStatusCircle(elementId, status) {
     const element = document.getElementById(elementId).firstElementChild; 
