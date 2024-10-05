@@ -74,6 +74,10 @@ html, body {
     align-items: center;
 }
 
+footer {
+    flex-grow: 1;
+}
+
 
 .settingsButton {
     border: none;
@@ -85,7 +89,7 @@ html, body {
     text-decoration: none;   /* Remove underline */
     color: inherit;          /* Inherit the color from the parent element */
     cursor: default;         /* Remove the pointer cursor, use default instead */
-  }
+}
 
 .scroll {
     max-height: 360px; 
@@ -103,9 +107,9 @@ html, body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-  }
+}
  
-  .modal-content {
+.modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -113,17 +117,53 @@ html, body {
     width: 90%;
     text-align: center;
     position: relative;
-  }
+}
   
-  .close {
+.close {
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 28px;
     cursor: pointer;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
-  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-grow: 0;
+    }
+    .scroll {
+        max-height: 300px; 
+    }
+}
+
+
+@media screen and (max-width: 2000px) {
+    .cardColor {
+      max-height: 100px;  
+    }
+
+    .card {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .scroll {
+        max-height: 600px;
+    }
+    .status-circle {
+        padding: 10px; 
+    }
+
+    .btnn {
+        padding-left: 1rem; 
+        padding-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+}
