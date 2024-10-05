@@ -2,4 +2,4 @@
 
 function navigateTo(url) {
     window.location.href = url;
-}
+}// end navigateTo()

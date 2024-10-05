@@ -47,22 +47,31 @@ async function processEventData() {
 
     switch (page) {
         case 'analysis_ellibot.html':
+            isEllieOffline();
             console.log('Ellie Bot (after event):', ellieData);
             updatePageForEllie();
             break;
         case 'analysis_pistachiobot.html':
+            isPistachioOffline();
             console.log('Pistachio Bot (after event):', pistachioData);
             updatePageForPistachio();
             break;
         case 'analysis_studyguidebot.html':
+            isStudyGuideOffline();
             console.log('Study Guide (after event):', pistachioData);
             updatePageForStudyGuide();
             break;
         case 'analysis_destinationguidebot.html':
+            isDestinationGuideOffline();
             console.log('Destination Guide (after event):', pistachioData);
             updatePageForDestinationGuide();
             break;
         default:
+
+            isEllieOffline();
+            isPistachioOffline();
+            isStudyGuideOffline();
+            isDestinationGuideOffline();
             console.log('Ellie Bot (after event):', ellieData);
             console.log('Pistachio Bot (after event):', pistachioData);
             console.log('Study Guide (after event):', studyGuideData);
@@ -70,7 +79,37 @@ async function processEventData() {
             updateAll();
             break;
     }
+
 }// end processEventData()
+
+
+function isEllieOffline() {
+    if(ellieData.status === 'offline'){
+        alert('Ellie bot is offline!');
+        console.log("Ellie")
+    }
+}// end isEllieOffline()
+
+function isPistachioOffline() {
+    if(pistachioData.status === 'offline'){
+        alert('Pistachio bot is offline!');
+        console.log("Pistachio")
+    }
+}// end isPistachioOffline()
+
+function isStudyGuideOffline() {
+    if(studyGuideData.status === 'offline'){
+        alert('Study Guide bot is offline!');
+        console.log("Study Guide")
+    }
+}// end isStudyGuideOffline()
+
+function isDestinationGuideOffline() {
+    if(destinationGuideData.status === 'offline'){
+        alert('Destination Guide is offline!');
+        console.log("Destination Guide")
+    }
+}// end isDestinationGuideOffline()
 
 
 function updateAll() {
@@ -88,22 +127,6 @@ function updateAll() {
     attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
     attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
-    
-    if(ellieData.status === 'offline'){
-        alert('Ellie bot is offline!');
-        console.log("Ellie")
-    }else if(pistachioData.status === 'offline'){
-        alert('Pistachio bot is offline!');
-        console.log("Pistachio")
-    }else if(studyGuideData.status === 'offline'){
-        alert('Study Guide bot is offline!');
-        console.log("Study Guide")
-    }else if(destinationGuideData.status === 'offline'){
-        alert('Destination Guide is offline!');
-        console.log("Destination Guide")
-    }else{
-        console.log("nothing happen")
-    }
 }// end updateAll()
 
 function updatePageForEllie() {
