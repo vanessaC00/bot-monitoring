@@ -1,0 +1,599 @@
+{
+  "records": [
+    {
+      "startDateTimeUtc": "2024-07-01T09:00:00.000Z",
+      "endDateTimeUtc": "2024-07-01T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "UBSP Q1 #-1": 1,
+        "UBSP Q2 #-1": 1,
+        "UBSP Q3 #-1": 1,
+        "UBSP Q4 #-1": 1,
+        "FC Collect Full Name": 1,
+        "User Chose UBSP  #-1": 1,
+        "FC Conversation Started": 1,
+        "Conversation started #-1": 3,
+        "UBSP Q1.5 Confirmation #-1": 1,
+        "User Asked Initial Questions #-1": 3
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-07-02T04:00:00.000Z",
+      "endDateTimeUtc": "2024-07-02T15:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 9,
+      "sessions": 23,
+      "userMessages": 98,
+      "botMessages": 235,
+      "events": 25,
+      "eventTypes": {
+        "state_expired": 13,
+        "webchat:conversationStarted": 10,
+        "botready": 1,
+        "botpublished": 1
+      },
+      "customEvents": {
+        "Timeout #0": 4,
+        "Conversation Ended #0": 4,
+        "Conversation started #-1": 13,
+        "User Asked Initial Questions #-1": 21,
+        "UBDP Q1 #-1": 3,
+        "User Chose UBDP #-1": 4,
+        "User Chose UBSP  #-1": 2,
+        "UBDP Q2 #-1": 2,
+        "UBDP Q3 #-1": 2,
+        "UBDP Q4 #-1": 5,
+        "Error #0": 1
+      },
+      "messages": 98
+    },
+    {
+      "startDateTimeUtc": "2024-07-03T01:00:00.000Z",
+      "endDateTimeUtc": "2024-07-03T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 7,
+      "sessions": 26,
+      "userMessages": 78,
+      "botMessages": 198,
+      "events": 28,
+      "eventTypes": {
+        "webchat:conversationStarted": 10,
+        "state_expired": 16,
+        "botready": 1,
+        "botpublished": 1
+      },
+      "customEvents": {
+        "FC Collect Full Name": 9,
+        "FC Conversation Started": 12,
+        "FC QStep#0": 40,
+        "Timeout #0": 7,
+        "FC QStep#0 Second Level": 12,
+        "FC Collect Email Address": 7,
+        "FC QStep#7": 5,
+        "Conversation Ended #0": 5,
+        "FC Phone Number Validation": 3,
+        "FC User Reached Final Backing": 5,
+        "FC Asking for Phone Number Approval": 5,
+        "FC User Accepted Phone Number Request": 4,
+        "FC User Denied Phone Number Request": 2
+      },
+      "messages": 78
+    },
+    {
+      "startDateTimeUtc": "2024-07-04T02:00:00.000Z",
+      "endDateTimeUtc": "2024-07-04T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 3,
+      "sessions": 19,
+      "userMessages": 22,
+      "botMessages": 60,
+      "events": 19,
+      "eventTypes": {
+        "state_expired": 12,
+        "webchat:conversationStarted": 7
+      },
+      "customEvents": {
+        "FC QStep#0": 15,
+        "FC QStep#7": 1,
+        "Timeout #0": 8,
+        "FC Collect Full Name": 3,
+        "Conversation Ended #0": 1,
+        "FC Conversation Started": 10,
+        "FC QStep#0 Second Level": 5,
+        "FC Collect Email Address": 4,
+        "FC Phone Number Validation": 1,
+        "FC User Reached Final Backing": 1,
+        "FC Asking for Phone Number Approval": 1,
+        "FC User Accepted Phone Number Request": 2
+      },
+      "messages": 22
+    },
+    {
+      "startDateTimeUtc": "2024-07-05T01:00:00.000Z",
+      "endDateTimeUtc": "2024-07-05T04:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 4,
+      "eventTypes": {
+        "botready": 2,
+        "botpublished": 2
+      },
+      "customEvents": {},
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-07-09T03:00:00.000Z",
+      "endDateTimeUtc": "2024-07-09T11:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 4,
+      "sessions": 23,
+      "userMessages": 62,
+      "botMessages": 126,
+      "events": 23,
+      "eventTypes": {
+        "webchat:conversationStarted": 7,
+        "state_expired": 16
+      },
+      "customEvents": {
+        "FC Collect Full Name": 18,
+        "FC Conversation Started": 12,
+        "FC QStep#0": 18,
+        "FC QStep#7": 2,
+        "Conversation Ended #0": 2,
+        "FC QStep#0 Second Level": 5,
+        "FC Collect Email Address": 9,
+        "FC Phone Number Validation": 2,
+        "FC User Reached Final Backing": 2,
+        "FC Asking for Phone Number Approval": 2,
+        "FC User Accepted Phone Number Request": 2,
+        "Timeout #0": 10
+      },
+      "messages": 62
+    },
+    {
+      "startDateTimeUtc": "2024-07-10T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-10T17:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 4,
+      "sessions": 9,
+      "userMessages": 19,
+      "botMessages": 42,
+      "events": 10,
+      "eventTypes": {
+        "state_expired": 6,
+        "botready": 1,
+        "botpublished": 1,
+        "webchat:conversationStarted": 2
+      },
+      "customEvents": {
+        "FC QStep#0": 25,
+        "FC QStep#0 Second Level": 7,
+        "FC Collect Email Address": 5,
+        "FC QStep#7": 3,
+        "Timeout #0": 5,
+        "FC Collect Full Name": 10,
+        "FC Conversation Started": 10,
+        "FC Asking for Phone Number Approval": 3,
+        "Error #0": 4,
+        "Conversation Ended #0": 13,
+        "FC User Reached Final Backing": 13,
+        "FC User Denied Phone Number Request": 2
+      },
+      "messages": 19
+    },
+    {
+      "startDateTimeUtc": "2024-07-11T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-11T15:00:00.000Z",
+      "returningUsers": 2,
+      "newUsers": 2,
+      "sessions": 11,
+      "userMessages": 12,
+      "botMessages": 24,
+      "events": 25,
+      "eventTypes": {
+        "state_expired": 7,
+        "botready": 7,
+        "botpublished": 7,
+        "webchat:conversationStarted": 4
+      },
+      "customEvents": {
+        "FC Collect Full Name": 23,
+        "FC Conversation Started": 24,
+        "FC QStep#0": 75,
+        "Timeout #0": 7,
+        "FC QStep#0 Second Level": 21,
+        "FC Collect Email Address": 16,
+        "Conversation started #-1": 6,
+        "User Asked Initial Questions #-1": 11,
+        "FC QStep#7": 10,
+        "Conversation Ended #0": 10,
+        "FC Phone Number Validation": 2,
+        "FC User Reached Final Backing": 10,
+        "FC Asking for Phone Number Approval": 10,
+        "FC User Accepted Phone Number Request": 2,
+        "User Chose UBDP #-1": 1,
+        "Error #0": 9,
+        "FC User Denied Phone Number Request": 8
+      },
+      "messages": 12
+    },
+    {
+      "startDateTimeUtc": "2024-07-12T01:00:00.000Z",
+      "endDateTimeUtc": "2024-07-12T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 5,
+      "sessions": 15,
+      "userMessages": 28,
+      "botMessages": 53,
+      "events": 16,
+      "eventTypes": {
+        "botready": 1,
+        "botpublished": 1,
+        "webchat:conversationStarted": 5,
+        "state_expired": 9
+      },
+      "customEvents": {
+        "FC QStep#0": 20,
+        "FC Collect Full Name": 20,
+        "FC Conversation Started": 24,
+        "FC Collect Email Address": 16,
+        "FC QStep#7": 2,
+        "Conversation Ended #0": 2,
+        "FC QStep#0 Second Level": 5,
+        "FC Phone Number Validation": 2,
+        "FC User Reached Final Backing": 2,
+        "FC Asking for Phone Number Approval": 2,
+        "FC User Accepted Phone Number Request": 3,
+        "Timeout #0": 6,
+        "Conversation started #-1": 8,
+        "User Asked Initial Questions #-1": 17
+      },
+      "messages": 28
+    },
+    {
+      "startDateTimeUtc": "2024-07-15T04:00:00.000Z",
+      "endDateTimeUtc": "2024-07-15T10:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 2,
+      "sessions": 5,
+      "userMessages": 15,
+      "botMessages": 28,
+      "events": 11,
+      "eventTypes": {
+        "state_expired": 2,
+        "webchat:conversationStarted": 3,
+        "botready": 3,
+        "botpublished": 3
+      },
+      "customEvents": {
+        "FC QStep#0": 55,
+        "Timeout #0": 2,
+        "FC Collect Full Name": 14,
+        "FC Conversation Started": 32,
+        "FC QStep#0 Second Level": 29,
+        "FC Collect Email Address": 13,
+        "Error #0": 1
+      },
+      "messages": 15
+    },
+    {
+      "startDateTimeUtc": "2024-07-16T04:00:00.000Z",
+      "endDateTimeUtc": "2024-07-16T11:00:00.000Z",
+      "returningUsers": 2,
+      "newUsers": 6,
+      "sessions": 21,
+      "userMessages": 78,
+      "botMessages": 150,
+      "events": 37,
+      "eventTypes": {
+        "botready": 4,
+        "botpublished": 4,
+        "state_expired": 14,
+        "webchat:conversationStarted": 15
+      },
+      "customEvents": {
+        "FC QStep#0": 100,
+        "FC QStep#7": 13,
+        "Timeout #0": 11,
+        "FC Collect Full Name": 21,
+        "Conversation Ended #0": 23,
+        "FC Conversation Started": 74,
+        "FC QStep#0 Second Level": 28,
+        "FC Collect Email Address": 21,
+        "FC Phone Number Validation": 9,
+        "FC User Reached Final Backing": 23,
+        "FC Asking for Phone Number Approval": 40,
+        "FC User Denied Phone Number Request": 7,
+        "FC User Accepted Phone Number Request": 15,
+        "Error #0": 1
+      },
+      "messages": 78
+    },
+    {
+      "startDateTimeUtc": "2024-07-17T06:00:00.000Z",
+      "endDateTimeUtc": "2024-07-17T09:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "FC QStep#0": 21,
+        "FC QStep#7": 3,
+        "FC Collect Full Name": 3,
+        "Conversation Ended #0": 3,
+        "FC Conversation Started": 3,
+        "FC QStep#0 Second Level": 6,
+        "FC Collect Email Address": 3,
+        "FC User Reached Final Backing": 3,
+        "FC Asking for Phone Number Approval": 2,
+        "FC User Denied Phone Number Request": 2
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-07-18T01:00:00.000Z",
+      "endDateTimeUtc": "2024-07-18T09:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 2,
+        "FC QStep#0": 119,
+        "FC QStep#7": 12,
+        "Conversation Ended #0": 10,
+        "FC Conversation Started": 27,
+        "FC QStep#0 Second Level": 33,
+        "FC User Reached Final Backing": 12,
+        "FC Asking for Phone Number Approval": 12,
+        "FC User Denied Phone Number Request": 9,
+        "FC Collect Full Name": 7,
+        "FC Collect Email Address": 7
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-07-19T07:00:00.000Z",
+      "endDateTimeUtc": "2024-07-19T08:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 1,
+        "FC QStep#0": 5,
+        "FC Conversation Started": 2,
+        "FC QStep#0 Second Level": 3
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-07-23T08:00:00.000Z",
+      "endDateTimeUtc": "2024-07-23T09:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 1,
+      "sessions": 2,
+      "userMessages": 12,
+      "botMessages": 24,
+      "events": 2,
+      "eventTypes": {
+        "state_expired": 1,
+        "webchat:conversationStarted": 1
+      },
+      "customEvents": {
+        "FC QStep#0": 7,
+        "FC QStep#7": 1,
+        "FC Collect Full Name": 1,
+        "Conversation Ended #0": 1,
+        "FC Conversation Started": 1,
+        "FC QStep#0 Second Level": 2,
+        "FC Collect Email Address": 1,
+        "FC User Reached Final Backing": 1,
+        "FC Asking for Phone Number Approval": 1,
+        "FC User Denied Phone Number Request": 1
+      },
+      "messages": 12
+    },
+    {
+      "startDateTimeUtc": "2024-07-25T05:00:00.000Z",
+      "endDateTimeUtc": "2024-07-26T00:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 37,
+      "sessions": 358,
+      "userMessages": 307,
+      "botMessages": 783,
+      "events": 358,
+      "eventTypes": {
+        "state_expired": 202,
+        "webchat:conversationStarted": 156
+      },
+      "customEvents": {
+        "FC QStep#0": 135,
+        "Timeout #0": 145,
+        "FC Collect Full Name": 61,
+        "FC Conversation Started": 162,
+        "FC QStep#0 Second Level": 41,
+        "FC Collect Email Address": 29,
+        "FC QStep#7": 16,
+        "Conversation Ended #0": 9,
+        "FC Phone Number Validation": 10,
+        "FC User Reached Final Backing": 9,
+        "FC Asking for Phone Number Approval": 22,
+        "FC User Accepted Phone Number Request": 10,
+        "FC User Denied Phone Number Request": 1,
+        "Error #0": 3
+      },
+      "messages": 307
+    },
+    {
+      "startDateTimeUtc": "2024-07-26T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-27T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 26,
+      "sessions": 319,
+      "userMessages": 206,
+      "botMessages": 582,
+      "events": 319,
+      "eventTypes": {
+        "state_expired": 179,
+        "webchat:conversationStarted": 140
+      },
+      "customEvents": {
+        "Timeout #0": 131,
+        "FC Collect Full Name": 47,
+        "FC Conversation Started": 144,
+        "FC QStep#0": 78,
+        "FC QStep#7": 9,
+        "Conversation Ended #0": 8,
+        "FC QStep#0 Second Level": 25,
+        "FC Collect Email Address": 33,
+        "FC Phone Number Validation": 7,
+        "FC User Reached Final Backing": 8,
+        "FC Asking for Phone Number Approval": 9,
+        "FC User Accepted Phone Number Request": 7,
+        "FC User Denied Phone Number Request": 2,
+        "Error #0": 1
+      },
+      "messages": 206
+    },
+    {
+      "startDateTimeUtc": "2024-07-27T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-28T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 20,
+      "sessions": 216,
+      "userMessages": 149,
+      "botMessages": 409,
+      "events": 216,
+      "eventTypes": {
+        "state_expired": 125,
+        "webchat:conversationStarted": 91
+      },
+      "customEvents": {
+        "Timeout #0": 85,
+        "FC Conversation Started": 96,
+        "FC Collect Full Name": 32,
+        "FC QStep#0": 60,
+        "FC QStep#7": 8,
+        "Conversation Ended #0": 7,
+        "FC QStep#0 Second Level": 18,
+        "FC Collect Email Address": 12,
+        "FC Phone Number Validation": 6,
+        "FC User Reached Final Backing": 7,
+        "FC Asking for Phone Number Approval": 8,
+        "FC User Accepted Phone Number Request": 6,
+        "FC User Denied Phone Number Request": 1
+      },
+      "messages": 149
+    },
+    {
+      "startDateTimeUtc": "2024-07-28T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-29T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 21,
+      "sessions": 244,
+      "userMessages": 172,
+      "botMessages": 469,
+      "events": 244,
+      "eventTypes": {
+        "state_expired": 139,
+        "webchat:conversationStarted": 105
+      },
+      "customEvents": {
+        "FC QStep#0": 70,
+        "FC QStep#7": 9,
+        "Timeout #0": 96,
+        "FC Collect Full Name": 38,
+        "Conversation Ended #0": 8,
+        "FC Conversation Started": 109,
+        "FC QStep#0 Second Level": 22,
+        "FC Collect Email Address": 15,
+        "FC Phone Number Validation": 7,
+        "FC User Reached Final Backing": 8,
+        "FC Asking for Phone Number Approval": 9,
+        "FC User Accepted Phone Number Request": 9,
+        "FC User Denied Phone Number Request": 1
+      },
+      "messages": 172
+    },
+    {
+      "startDateTimeUtc": "2024-07-29T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-30T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 34,
+      "sessions": 339,
+      "userMessages": 284,
+      "botMessages": 726,
+      "events": 339,
+      "eventTypes": {
+        "state_expired": 189,
+        "webchat:conversationStarted": 150
+      },
+      "customEvents": {
+        "FC QStep#0": 119,
+        "FC QStep#7": 14,
+        "Timeout #0": 132,
+        "FC Collect Full Name": 74,
+        "Conversation Ended #0": 12,
+        "FC Conversation Started": 151,
+        "FC QStep#0 Second Level": 35,
+        "FC Collect Email Address": 29,
+        "FC Phone Number Validation": 7,
+        "FC User Reached Final Backing": 12,
+        "FC Asking for Phone Number Approval": 14,
+        "FC User Accepted Phone Number Request": 7,
+        "FC User Denied Phone Number Request": 6
+      },
+      "messages": 284
+    },
+    {
+      "startDateTimeUtc": "2024-07-30T00:00:00.000Z",
+      "endDateTimeUtc": "2024-07-31T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 25,
+      "sessions": 283,
+      "userMessages": 297,
+      "botMessages": 718,
+      "events": 283,
+      "eventTypes": {
+        "state_expired": 160,
+        "webchat:conversationStarted": 123
+      },
+      "customEvents": {
+        "Timeout #0": 109,
+        "FC QStep#0": 125,
+        "FC QStep#7": 16,
+        "FC Collect Full Name": 41,
+        "Conversation Ended #0": 16,
+        "FC Conversation Started": 125,
+        "FC QStep#0 Second Level": 37,
+        "FC Collect Email Address": 27,
+        "FC Phone Number Validation": 21,
+        "FC User Reached Final Backing": 16,
+        "FC Asking for Phone Number Approval": 29,
+        "FC User Accepted Phone Number Request": 16,
+        "FC User Denied Phone Number Request": 1
+      },
+      "messages": 297
+    }
+  ]
+}

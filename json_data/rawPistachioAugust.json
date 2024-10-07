@@ -1,0 +1,542 @@
+{
+  "records": [
+    {
+      "startDateTimeUtc": "2024-08-01T09:00:00.000Z",
+      "endDateTimeUtc": "2024-08-01T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 2,
+      "userMessages": 0,
+      "botMessages": 3,
+      "events": 2,
+      "eventTypes": {
+        "state_expired": 1,
+        "webchat:conversationStarted": 1
+      },
+      "customEvents": {
+        "Timeout #0": 1,
+        "Conversation started #-1": 1,
+        "User Asked Initial Questions #-1": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-02T07:00:00.000Z",
+      "endDateTimeUtc": "2024-08-02T12:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 3,
+      "sessions": 21,
+      "userMessages": 39,
+      "botMessages": 95,
+      "events": 21,
+      "eventTypes": {
+        "state_expired": 11,
+        "webchat:conversationStarted": 10
+      },
+      "customEvents": {
+        "Timeout #0": 6,
+        "Conversation started #-1": 11,
+        "User Asked Initial Questions #-1": 12,
+        "Timeout #-1": 4,
+        "UBDP Q1 #-1": 3,
+        "UBDP Q2 #-1": 3,
+        "UBDP Q3 #-1": 3,
+        "UBSP Q1 #-1": 3,
+        "UBSP Q2 #-1": 3,
+        "UBSP Q3 #-1": 3,
+        "UBSP Q4 #-1": 3,
+        "User Chose UBDP #-1": 3,
+        "User Chose UBSP  #-1": 3,
+        "UBSP Q1.5 Confirmation #-1": 3,
+        "UBDP All Questions Completed #-1": 2,
+        "UBSP All Questions Completed #-1": 3,
+        "User Reasking Initial Questions #-1": 3,
+        "UBDP Q4 #-1": 1,
+        "UBSP Q5 #-1": 3
+      },
+      "messages": 39
+    },
+    {
+      "startDateTimeUtc": "2024-08-05T07:00:00.000Z",
+      "endDateTimeUtc": "2024-08-05T14:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 1,
+      "sessions": 10,
+      "userMessages": 1,
+      "botMessages": 23,
+      "events": 19,
+      "eventTypes": {
+        "botready": 1,
+        "botpublished": 1,
+        "state_expired": 5,
+        "webchat:conversationStarted": 12
+      },
+      "customEvents": {
+        "Error #0": 5,
+        "Timeout #0": 4,
+        "Conversation started #-1": 7,
+        "User Asked Initial Questions #-1": 7
+      },
+      "messages": 1
+    },
+    {
+      "startDateTimeUtc": "2024-08-06T01:00:00.000Z",
+      "endDateTimeUtc": "2024-08-06T19:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 2,
+      "sessions": 5,
+      "userMessages": 3,
+      "botMessages": 0,
+      "events": 28,
+      "eventTypes": {
+        "webchat:conversationStarted": 26,
+        "state_expired": 2
+      },
+      "customEvents": {},
+      "messages": 3
+    },
+    {
+      "startDateTimeUtc": "2024-08-07T06:00:00.000Z",
+      "endDateTimeUtc": "2024-08-07T10:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 3,
+      "sessions": 11,
+      "userMessages": 10,
+      "botMessages": 22,
+      "events": 25,
+      "eventTypes": {
+        "botready": 2,
+        "botpublished": 2,
+        "state_expired": 6,
+        "webchat:conversationStarted": 15
+      },
+      "customEvents": {
+        "Timeout #-1": 4,
+        "UBDP Q1 #-1": 1,
+        "UBDP Q2 #-1": 1,
+        "UBDP Q3 #-1": 1,
+        "User Chose UBDP #-1": 1,
+        "Conversation started #-1": 4,
+        "User Asked Initial Questions #-1": 4,
+        "UBDP Q4 #-1": 1,
+        "UBDP All Questions Completed #-1": 1
+      },
+      "messages": 10
+    },
+    {
+      "startDateTimeUtc": "2024-08-08T06:00:00.000Z",
+      "endDateTimeUtc": "2024-08-08T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 2,
+      "sessions": 11,
+      "userMessages": 24,
+      "botMessages": 59,
+      "events": 19,
+      "eventTypes": {
+        "state_expired": 6,
+        "webchat:conversationStarted": 7,
+        "botready": 3,
+        "botpublished": 3
+      },
+      "customEvents": {
+        "Timeout #-1": 4,
+        "UBDP Q1 #-1": 5,
+        "UBDP Q2 #-1": 5,
+        "UBDP Q3 #-1": 5,
+        "UBDP Q4 #-1": 2,
+        "User Chose UBDP #-1": 4,
+        "Conversation started #-1": 5,
+        "UBDP All Questions Completed #-1": 3,
+        "User Asked Initial Questions #-1": 7,
+        "User Reasking Initial Questions #-1": 1,
+        "Timeout #0": 1
+      },
+      "messages": 24
+    },
+    {
+      "startDateTimeUtc": "2024-08-09T13:00:00.000Z",
+      "endDateTimeUtc": "2024-08-09T15:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 0,
+      "sessions": 4,
+      "userMessages": 0,
+      "botMessages": 6,
+      "events": 4,
+      "eventTypes": {
+        "state_expired": 2,
+        "webchat:conversationStarted": 2
+      },
+      "customEvents": {
+        "Timeout #0": 2,
+        "Conversation started #-1": 2,
+        "User Asked Initial Questions #-1": 2
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-12T04:00:00.000Z",
+      "endDateTimeUtc": "2024-08-12T20:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 8,
+      "sessions": 27,
+      "userMessages": 56,
+      "botMessages": 132,
+      "events": 27,
+      "eventTypes": {
+        "state_expired": 15,
+        "webchat:conversationStarted": 12
+      },
+      "customEvents": {
+        "Timeout #-1": 10,
+        "Timeout #0": 2,
+        "UBDP Q1 #-1": 9,
+        "UBDP Q2 #-1": 9,
+        "UBDP Q3 #-1": 9,
+        "UBDP Q4 #-1": 7,
+        "User Chose UBDP #-1": 10,
+        "Conversation started #-1": 12,
+        "UBDP All Questions Completed #-1": 9,
+        "User Asked Initial Questions #-1": 14,
+        "UBSP Q1 #-1": 1,
+        "UBSP Q2 #-1": 1,
+        "UBSP Q3 #-1": 1,
+        "UBSP Q4 #-1": 1,
+        "User Chose UBSP  #-1": 1,
+        "UBSP Q1.5 Confirmation #-1": 1,
+        "User Reasking Initial Questions #-1": 2
+      },
+      "messages": 56
+    },
+    {
+      "startDateTimeUtc": "2024-08-13T02:00:00.000Z",
+      "endDateTimeUtc": "2024-08-13T11:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 4,
+      "sessions": 26,
+      "userMessages": 26,
+      "botMessages": 104,
+      "events": 46,
+      "eventTypes": {
+        "state_expired": 14,
+        "webchat:conversationStarted": 15,
+        "botready": 3,
+        "botpublished": 3,
+        "webchat:trigger": 11
+      },
+      "customEvents": {
+        "Timeout #0": 7,
+        "Conversation started #-1": 20,
+        "User Asked Initial Questions #-1": 23,
+        "Timeout #-1": 4,
+        "UBDP Q1 #-1": 4,
+        "UBDP Q2 #-1": 4,
+        "UBDP Q3 #-1": 4,
+        "UBDP Q4 #-1": 2,
+        "UBDP All Questions Completed #-1": 4,
+        "User Chose UBDP #-1": 4,
+        "Error #0": 1,
+        "UBSP Q1 #-1": 1,
+        "UBSP Q2 #-1": 1,
+        "User Chose UBSP  #-1": 1,
+        "UBSP Q1.5 Confirmation #-1": 1,
+        "User Reasking Initial Questions #-1": 1,
+        "UBSP Q3 #-1": 1,
+        "UBSP Q4 #-1": 1,
+        "UBSP All Questions Completed #-1": 1
+      },
+      "messages": 26
+    },
+    {
+      "startDateTimeUtc": "2024-08-14T07:00:00.000Z",
+      "endDateTimeUtc": "2024-08-14T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 5,
+      "sessions": 12,
+      "userMessages": 16,
+      "botMessages": 45,
+      "events": 27,
+      "eventTypes": {
+        "state_expired": 7,
+        "webchat:trigger": 5,
+        "webchat:conversationStarted": 5,
+        "botready": 5,
+        "botpublished": 5
+      },
+      "customEvents": {
+        "Timeout #-1": 5,
+        "UBDP Q1 #-1": 3,
+        "UBDP Q2 #-1": 5,
+        "User Chose UBDP #-1": 5,
+        "Conversation started #-1": 7,
+        "User Asked Initial Questions #-1": 7,
+        "UBDP Q3 #-1": 2,
+        "UBDP All Questions Completed #-1": 2
+      },
+      "messages": 16
+    },
+    {
+      "startDateTimeUtc": "2024-08-15T05:00:00.000Z",
+      "endDateTimeUtc": "2024-08-15T06:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 2,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 2,
+        "Conversation started #-1": 1,
+        "User Asked Initial Questions #-1": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-16T03:00:00.000Z",
+      "endDateTimeUtc": "2024-08-16T05:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 2,
+      "userMessages": 0,
+      "botMessages": 3,
+      "events": 3,
+      "eventTypes": {
+        "state_expired": 1,
+        "webchat:trigger": 1,
+        "webchat:conversationStarted": 1
+      },
+      "customEvents": {
+        "Timeout #0": 1,
+        "Conversation started #-1": 1,
+        "User Asked Initial Questions #-1": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-19T01:00:00.000Z",
+      "endDateTimeUtc": "2024-08-19T10:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 3,
+      "sessions": 20,
+      "userMessages": 13,
+      "botMessages": 74,
+      "events": 35,
+      "eventTypes": {
+        "state_expired": 11,
+        "webchat:trigger": 11,
+        "webchat:conversationStarted": 9,
+        "botready": 2,
+        "botpublished": 2
+      },
+      "customEvents": {
+        "Error #0": 1,
+        "Timeout #0": 6,
+        "Timeout #-1": 3,
+        "UBDP Q1 #-1": 3,
+        "UBDP Q2 #-1": 3,
+        "UBDP Q3 #-1": 3,
+        "User Chose UBDP #-1": 3,
+        "Conversation started #-1": 10,
+        "UBDP All Questions Completed #-1": 1,
+        "User Asked Initial Questions #-1": 14,
+        "UBDP Q4 #-1": 2
+      },
+      "messages": 13
+    },
+    {
+      "startDateTimeUtc": "2024-08-20T01:00:00.000Z",
+      "endDateTimeUtc": "2024-08-20T15:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 16,
+      "userMessages": 0,
+      "botMessages": 43,
+      "events": 28,
+      "eventTypes": {
+        "botready": 2,
+        "botpublished": 2,
+        "state_expired": 9,
+        "webchat:trigger": 8,
+        "webchat:conversationStarted": 7
+      },
+      "customEvents": {
+        "Timeout #0": 6,
+        "Conversation started #-1": 6,
+        "User Asked Initial Questions #-1": 14,
+        "Error #0": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-21T00:00:00.000Z",
+      "endDateTimeUtc": "2024-08-21T15:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 12,
+      "sessions": 38,
+      "userMessages": 62,
+      "botMessages": 155,
+      "events": 60,
+      "eventTypes": {
+        "state_expired": 20,
+        "webchat:conversationStarted": 18,
+        "botready": 10,
+        "botpublished": 10,
+        "webchat:trigger": 2
+      },
+      "customEvents": {
+        "Error #0": 2,
+        "Timeout #0": 5,
+        "Conversation started #-1": 17,
+        "User Asked Initial Questions #-1": 18,
+        "Timeout #-1": 12,
+        "UBDP Q1 #-1": 7,
+        "UBDP Q2 #-1": 7,
+        "UBDP Q3 #-1": 3,
+        "UBDP Q4 #-1": 2,
+        "UBSP Q1 #-1": 5,
+        "UBSP Q2 #-1": 5,
+        "UBSP Q3 #-1": 8,
+        "UBSP Q4 #-1": 3,
+        "UBSP Q5 #-1": 4,
+        "User Chose UBDP #-1": 8,
+        "User Chose UBSP  #-1": 3,
+        "UBSP Q1.5 Confirmation #-1": 5,
+        "UBDP All Questions Completed #-1": 2,
+        "UBSP All Questions Completed #-1": 1,
+        "UBSP All Questions Completed Fallback #-1": 2
+      },
+      "messages": 62
+    },
+    {
+      "startDateTimeUtc": "2024-08-22T09:00:00.000Z",
+      "endDateTimeUtc": "2024-08-22T10:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 2,
+      "eventTypes": {
+        "botready": 1,
+        "botpublished": 1
+      },
+      "customEvents": {},
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-23T01:00:00.000Z",
+      "endDateTimeUtc": "2024-08-23T02:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 1,
+      "sessions": 7,
+      "userMessages": 4,
+      "botMessages": 15,
+      "events": 9,
+      "eventTypes": {
+        "botready": 1,
+        "botpublished": 1,
+        "state_expired": 4,
+        "webchat:conversationStarted": 3
+      },
+      "customEvents": {
+        "Error #0": 2,
+        "Timeout #0": 1,
+        "Timeout #-1": 1,
+        "UBDP Q1 #-1": 1,
+        "UBDP Q2 #-1": 1,
+        "UBDP Q3 #-1": 1,
+        "User Chose UBDP #-1": 1,
+        "Conversation started #-1": 2,
+        "UBDP All Questions Completed #-1": 1,
+        "User Asked Initial Questions #-1": 2
+      },
+      "messages": 4
+    },
+    {
+      "startDateTimeUtc": "2024-08-26T03:00:00.000Z",
+      "endDateTimeUtc": "2024-08-26T04:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 1,
+        "UBDP Q1 #-1": 2,
+        "UBDP Q2 #-1": 1,
+        "User Chose UBDP #-1": 2,
+        "Conversation started #-1": 2,
+        "User Asked Initial Questions #-1": 2
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-08-29T00:00:00.000Z",
+      "endDateTimeUtc": "2024-08-29T10:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 5,
+      "sessions": 12,
+      "userMessages": 24,
+      "botMessages": 63,
+      "events": 18,
+      "eventTypes": {
+        "state_expired": 6,
+        "webchat:conversationStarted": 6,
+        "botready": 3,
+        "botpublished": 3
+      },
+      "customEvents": {
+        "Timeout #-1": 5,
+        "Error #0": 2,
+        "UBDP Q1 #-1": 5,
+        "UBDP Q2 #-1": 5,
+        "UBDP Q3 #-1": 5,
+        "UBDP Q4 #-1": 3,
+        "User Chose UBDP #-1": 5,
+        "Conversation started #-1": 5,
+        "UBDP All Questions Completed #-1": 5,
+        "User Asked Initial Questions #-1": 5,
+        "User Reasking Initial Questions #-1": 1
+      },
+      "messages": 24
+    },
+    {
+      "startDateTimeUtc": "2024-08-30T05:00:00.000Z",
+      "endDateTimeUtc": "2024-08-30T13:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 3,
+      "sessions": 17,
+      "userMessages": 30,
+      "botMessages": 121,
+      "events": 42,
+      "eventTypes": {
+        "state_expired": 11,
+        "webchat:trigger": 25,
+        "webchat:conversationStarted": 6
+      },
+      "customEvents": {
+        "Timeout #-1": 4,
+        "Timeout #0": 3,
+        "Conversation started #-1": 7,
+        "User Asked Initial Questions #-1": 16,
+        "UBDP Q1 #-1": 5,
+        "UBDP Q2 #-1": 5,
+        "UBDP Q3 #-1": 5,
+        "User Chose UBDP #-1": 5,
+        "UBDP All Questions Completed #-1": 5,
+        "UBDP Q4 #-1": 3,
+        "UBSP Q1 #-1": 1,
+        "UBSP Q2 #-1": 1,
+        "UBSP Q3 #-1": 1,
+        "UBSP Q4 #-1": 1,
+        "User Chose UBSP  #-1": 1,
+        "UBSP Q1.5 Confirmation #-1": 1,
+        "UBSP All Questions Completed #-1": 1,
+        "User Reasking Initial Questions #-1": 10
+      },
+      "messages": 30
+    }
+  ]
+}

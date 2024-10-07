@@ -1,0 +1,160 @@
+{
+  "records": [
+    {
+      "startDateTimeUtc": "2024-06-19T18:00:00.000Z",
+      "endDateTimeUtc": "2024-06-19T19:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Conversation started #-1": 1,
+        "User Asked Initial Questions #-1": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-20T06:00:00.000Z",
+      "endDateTimeUtc": "2024-06-20T20:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 3,
+        "Conversation Ended #0": 1,
+        "Conversation started #-1": 1,
+        "User Asked Initial Questions #-1": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-21T11:00:00.000Z",
+      "endDateTimeUtc": "2024-06-21T20:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 7
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-22T00:00:00.000Z",
+      "endDateTimeUtc": "2024-06-22T01:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 9
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-24T04:00:00.000Z",
+      "endDateTimeUtc": "2024-06-25T00:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 20
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-25T01:00:00.000Z",
+      "endDateTimeUtc": "2024-06-25T02:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 0,
+      "userMessages": 0,
+      "botMessages": 0,
+      "events": 0,
+      "eventTypes": {},
+      "customEvents": {
+        "Error #0": 1
+      },
+      "messages": 0
+    },
+    {
+      "startDateTimeUtc": "2024-06-26T01:00:00.000Z",
+      "endDateTimeUtc": "2024-06-26T18:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 2,
+      "sessions": 2,
+      "userMessages": 14,
+      "botMessages": 34,
+      "events": 4,
+      "eventTypes": {
+        "state_expired": 1,
+        "botready": 1,
+        "botpublished": 1,
+        "webchat:conversationStarted": 1
+      },
+      "customEvents": {
+        "Conversation Ended #0": 24,
+        "Error #0": 1
+      },
+      "messages": 14
+    },
+    {
+      "startDateTimeUtc": "2024-06-27T03:00:00.000Z",
+      "endDateTimeUtc": "2024-06-27T20:00:00.000Z",
+      "returningUsers": 1,
+      "newUsers": 3,
+      "sessions": 6,
+      "userMessages": 17,
+      "botMessages": 45,
+      "events": 6,
+      "eventTypes": {
+        "state_expired": 3,
+        "webchat:conversationStarted": 3
+      },
+      "customEvents": {
+        "Timeout #0": 3,
+        "Conversation Ended #0": 4,
+        "Error #0": 2
+      },
+      "messages": 17
+    },
+    {
+      "startDateTimeUtc": "2024-06-28T03:00:00.000Z",
+      "endDateTimeUtc": "2024-06-28T08:00:00.000Z",
+      "returningUsers": 0,
+      "newUsers": 0,
+      "sessions": 11,
+      "userMessages": 0,
+      "botMessages": 10,
+      "events": 15,
+      "eventTypes": {
+        "botready": 2,
+        "botpublished": 2,
+        "state_expired": 6,
+        "webchat:conversationStarted": 5
+      },
+      "customEvents": {
+        "Timeout #0": 5,
+        "Conversation Ended #0": 1
+      },
+      "messages": 0
+    }
+  ]
+}

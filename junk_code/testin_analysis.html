@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show New Users from Multiple Files</title>
+</head>
+<body>
+  <h1>New Users Count</h1>
+  
+  
+  <ul id="elliUser"></ul>
+
+  <script>
+    // Function to fetch a JSON file and return its data
+    async function fetchJSONFile(fileName) {
+      try {
+        const response = await fetch(fileName);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${fileName}`);
+        }
+
+        const data = await response.json();
+        return data;
+
+      } catch (error) {
+        console.error('Error fetching or processing data:', error);
+        return null; 
+      }
+    }
+
+    // Function to display newUsers from multiple JSON files
+    async function displayNewUsersFromFiles() {
+      const files = ['elliJune.json','elliJuly.json','elliAugust.json','elliSeptember.json','elliOctober.json']; 
+      const listElement = document.getElementById('newUsersList'); // UL element to display new users
+      
+      for (const file of files) {
+        const data = await fetchJSONFile(file);
+
+        if (data) {
+          // Extract the newUsers value from each JSON file
+          const newUsers = data.newUsers;
+
+          // Create a new list item to display the newUsers value
+          const listItem = document.createElement('li');
+          listItem.textContent = `New Users: ${newUsers}`; 
+
+          // Append the list item to the UL element
+          listElement.appendChild(listItem);
+        }
+      }
+    }
+    
+    window.onload = displayNewUsersFromFiles;
+  </script>
+</body>
+</html>

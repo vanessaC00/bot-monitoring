@@ -1,0 +1,18 @@
+{
+  "startDateTimeUtc": "2024-08-01T09:00:00.000Z",
+  "endDateTimeUtc": "2024-08-30T13:00:00.000Z",
+  "returningUsers": 7,
+  "newUsers": 52,
+  "sessions": 241,
+  "userMessages": 308,
+  "botMessages": 965,
+  "events": 415,
+  "eventTypes": {
+    "botready": 33,
+    "botpublished": 33,
+    "state_expired": 131,
+    "webchat:conversationStarted": 155
+  },
+  "customEvents": {},
+  "messages": []
+}
