@@ -113,10 +113,10 @@ function isDestinationGuideOffline() {
 
 
 function updateAll() {
-    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Live Version:<br> ${ellieData.version}<br>Latest release version:<br> ${ellieData.updatedAt}` : 'No data available';
-    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Live Version:<br> ${pistachioData.version}<br>Latest release version:<br> ${pistachioData.status}` : 'No data available';
-    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Live Version:<br> ${studyGuideData.version}<br>Latest release version:<br> ${studyGuideData.status}` : 'No data available';
-    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Live Version:<br> ${destinationGuideData.version}<br>Latest release version:<br> ${destinationGuideData.status}` : 'No data available';
+    document.getElementById('ellie-data').innerHTML = ellieData.version ? `Live Version:<br> ${ellieData.version}<br>Latest status:<br> ${ellieData.status}` : 'No data available';
+    document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Live Version:<br> ${pistachioData.version}<br>Latest status:<br> ${pistachioData.status}` : 'No data available';
+    document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Live Version:<br> ${studyGuideData.version}<br>Latest status:<br> ${studyGuideData.status}` : 'No data available';
+    document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Live Version:<br> ${destinationGuideData.version}<br>Latest status:<br> ${destinationGuideData.status}` : 'No data available';
     
     updateStatusCircle('ellie-status-circle', ellieData.status);
     updateStatusCircle('pistachio-status-circle', pistachioData.status);
