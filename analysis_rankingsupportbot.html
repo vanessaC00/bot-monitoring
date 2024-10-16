@@ -12,7 +12,7 @@
 <body>
     <header class="card py-2 cardColor">
         <div class=" my-1 mx-2">
-            <img src="qs-logo-header.png" class="img-size">
+            <img src="imgs/qs-logo-header.png" class="img-size">
             <button class="settingsButton"><i class='fas fa-cog' style='font-size:36px'></i></i></button>
         </div>
     </header>
@@ -52,11 +52,11 @@
                             </div>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_pistachiobot.html')">Pistachio Bot</button></li>
-                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_ellibot.html')">Elli Bot</button></li>
-                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_studyguidebot.html')">Study Guide Bot</button></li>
-                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_destinationguidebot.html')">Destination Guide Bot</button></li>
-                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_rankingsupportbot.html')">QS Ranking Support Bot</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_pistachiobot.html')">Pistachio_University Search</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_ellibot.html')">Elli_QS Apply</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_studyguidebot.html')">Pistachio_Study Guide</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_destinationguidebot.html')">Pistachio_Destination Guide</button></li>
+                            <li><button class="dropdown-item btnn" onclick="navigateTo('analysis_rankingsupportbot.html')">Robert_QS Support and Ranking</button></li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <header class="container-fluid p-3 border-bottom">
                     <div class="row">
                         <div class="col-6">
-                            <h4>Analytics: QS Ranking Support Bot</h4>
+                            <h4>Analytics: Robert_QS Support and Ranking</h4>
                         </div>
                         <div class="col-6 text-end">
                             <div class="row">
@@ -97,8 +97,23 @@
                 <header class="container-fluid p-2 mb-3 bg-light border-bottom">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-start">
-                            <button class="btn btn-dark mx-2" id="study-matrix-tab">Study Matrix</button>
-                            <button class="btn btn-light mx-2" id="destination-matrix-tab">Destination Matrix</button>
+                            <button class="btn btn-dark mx-2" id="study-matrix-tab">Sort by date</button>
+                            <select class="form-select mx-2" style="width: auto;" id="monthSelector">
+                                <option selected>Choose a month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            <!-- <button class="btn btn-light mx-2" id="destination-matrix-tab">Destination Matrix</button> -->
                         </div>
                     </div>
                 </header>
@@ -110,9 +125,16 @@
                         <div class="col-3"></div>
 
                         <!-- Main Content Area -->
-                        <div class="col-9">
+                        <div class="col-12 col-md-8 matrix-content">
                             <div id="matrix-content" class="border rounded p-3">
-                                
+                                <h2>Total New Users</h2>
+                                <div class = "circle">
+                                    <div class="total-users-circle">
+                                        <span id="totalUsers">0</span>
+                                    </div>
+                                </div>
+                                <h2>New Users by Month</h2>
+                                <ul id="monthList" class="list-unstyled"></ul>
                             </div>
                         </div>
                     </div>

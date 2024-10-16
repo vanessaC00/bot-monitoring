@@ -176,7 +176,6 @@ function updatePageForRankingSupport() {
     document.getElementById('ranking-support-data').innerHTML = rankingSupportData.version ? `Live Version:<br> ${rankingSupportData.version}<br>Latest status:<br> ${rankingSupportData.status}` : 'No data available';
     updateStatusCircle('ranking-support-status-circle', rankingSupportData.status);
     attachClickEventToStatus('ranking-support-status-circle', rankingSupportData.status);
-
 }// updatePageForRankingSupport()
 
 function updateStatusCircle(elementId, status) {
