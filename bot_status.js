@@ -16,6 +16,7 @@ let ellieData = {};
 let pistachioData = {};
 let studyGuideData = {};
 let destinationGuideData = {};
+let rankingSupportData = {};
 
 function getEventData() {
     return new Promise((resolve, reject) => {
@@ -29,6 +30,7 @@ function getEventData() {
                         pistachioData = event.value.pistachio || {};
                         studyGuideData = event.value.study_guide || {};
                         destinationGuideData = event.value.destination_guide || {};
+                        rankingSupportData = event.value.ranking_support || {};
                         
                         resolve();
                     } catch (error) {
@@ -76,6 +78,7 @@ async function processEventData() {
             console.log('Pistachio Bot (after event):', pistachioData);
             console.log('Study Guide (after event):', studyGuideData);
             console.log('Destination Guide (after event):', destinationGuideData);
+            console.log('QS Ranking Support (after event):', rankingSupportData);
             updateAll();
             break;
     }
@@ -117,16 +120,19 @@ function updateAll() {
     document.getElementById('pistachio-data').innerHTML = pistachioData.version ? `Live Version:<br> ${pistachioData.version}<br>Latest status:<br> ${pistachioData.status}` : 'No data available';
     document.getElementById('study-guide-data').innerHTML = studyGuideData.version ? `Live Version:<br> ${studyGuideData.version}<br>Latest status:<br> ${studyGuideData.status}` : 'No data available';
     document.getElementById('destination-guide-data').innerHTML = destinationGuideData.version ? `Live Version:<br> ${destinationGuideData.version}<br>Latest status:<br> ${destinationGuideData.status}` : 'No data available';
-    
+    document.getElementById('ranking-support-data').innerHTML = rankingSupportData.version ? `Live Version:<br> ${rankingSupportData.version}<br>Latest status:<br> ${rankingSupportData.status}` : 'No data available';
+
     updateStatusCircle('ellie-status-circle', ellieData.status);
     updateStatusCircle('pistachio-status-circle', pistachioData.status);
     updateStatusCircle('study-guide-status-circle', studyGuideData.status);
     updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
+    updateStatusCircle('ranking-support-status-circle', rankingSupportData.status);
 
     attachClickEventToStatus('ellie-status-circle', ellieData.status);
     attachClickEventToStatus('pistachio-status-circle', pistachioData.status);
     attachClickEventToStatus('study-guide-status-circle', studyGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
+    attachClickEventToStatus('ranking-support-status-circle', rankingSupportData.status);
 }// end updateAll()
 
 function updatePageForEllie() {
