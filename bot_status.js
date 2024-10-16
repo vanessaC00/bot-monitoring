@@ -68,12 +68,18 @@ async function processEventData() {
             console.log('Destination Guide (after event):', pistachioData);
             updatePageForDestinationGuide();
             break;
+        case 'analysis_rankingsupportbot.html':
+            iRankingSupportOffline();
+            console.log('QS Ranking Support (after event):', rankingSupportData);
+            updatePageForRankingSupport();
+            break;
         default:
 
             isEllieOffline();
             isPistachioOffline();
             isStudyGuideOffline();
             isDestinationGuideOffline();
+            iRankingSupportOffline();
             console.log('Ellie Bot (after event):', ellieData);
             console.log('Pistachio Bot (after event):', pistachioData);
             console.log('Study Guide (after event):', studyGuideData);
@@ -113,6 +119,13 @@ function isDestinationGuideOffline() {
         console.log("Destination Guide")
     }
 }// end isDestinationGuideOffline()
+
+function iRankingSupportOffline() {
+    if(destinationGuideData.status === 'offline'){
+        alert('QS Ranking Support Bot is offline!');
+        console.log("Ranking Support")
+    }
+}// end iRankingSupportOffline()
 
 
 function updateAll() {
@@ -158,6 +171,13 @@ function updatePageForDestinationGuide() {
     updateStatusCircle('destination-guide-status-circle', destinationGuideData.status);
     attachClickEventToStatus('destination-guide-status-circle', destinationGuideData.status);
 }// updatePageForDestinationGuide()
+
+function updatePageForRankingSupport() {
+    document.getElementById('ranking-support-data').innerHTML = rankingSupportData.version ? `Live Version:<br> ${rankingSupportData.version}<br>Latest status:<br> ${rankingSupportData.status}` : 'No data available';
+    updateStatusCircle('ranking-support-status-circle', rankingSupportData.status);
+    attachClickEventToStatus('ranking-support-status-circle', rankingSupportData.status);
+
+}// updatePageForRankingSupport()
 
 function updateStatusCircle(elementId, status) {
     const element = document.getElementById(elementId).firstElementChild; 
