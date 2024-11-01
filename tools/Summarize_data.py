@@ -25,7 +25,10 @@ def summarize_records(records):
             "state_expired": 0,
             "webchat:conversationStarted": 0
         },
-        "customEvents": {},
+        "customEvents": {
+            "Destination Guide User": 0,
+            "Study Guide User": 0,
+        },
         "messages": []
     }
 
@@ -41,6 +44,10 @@ def summarize_records(records):
         # Aggregate event types
         for event_type in summary["eventTypes"]:
             summary["eventTypes"][event_type] += record["eventTypes"].get(event_type, 0)
+
+        # Aggregate event types
+        for event in summary["customEvents"]:
+            summary["customEvents"][event] += record["customEvents"].get(event, 0)
 
     return summary
 
