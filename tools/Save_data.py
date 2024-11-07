@@ -1,5 +1,6 @@
 import requests
 import json
+from datetime import datetime
 
 # Define your API details
 bot_id = "a4acca45-aa89-4340-996f-e12b79cb2ab9"
@@ -12,8 +13,8 @@ personal_access_token = "bp_pat_dJS04K28LMhVf2gseZpKQIDq1bL0PqU9RJIc"
 # Define the API URL and parameters
 url = f"https://api.botpress.cloud/v1/admin/bots/{bot_id}/analytics"
 params = {
-    'startDate': '2024-10-01',  
-    'endDate': '2024-10-31'     
+    'startDate': '2024-06-01',  
+    'endDate': datetime.today().strftime('%Y-%m-%d')    
 }
 
 # Define the headers, including the Bearer token for authorization
@@ -33,7 +34,7 @@ if response.status_code == 200:
     analytics_data = response.json()
 
     # Save the data to a JSON file
-    with open('rawPistachioOctober.json', 'w') as file:
+    with open('botpress_analytics.json', 'w') as file:
         json.dump(analytics_data, file, indent=2)
 
     print("Analytics data saved to 'botpress_analytics.json'")
